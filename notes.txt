@@ -1,0 +1,44 @@
+1. Async and await 
+
+ 
+
+async - Before Function name(Task)
+
+ 
+
+await - To Handle the waiting Period 
+
+ 
+
+ 
+
+ 
+
+API-Waiter/Messenger.
+
+ 
+
+ 
+
+Order Place(customer=client) / Request ("Pizza/Data")- Waiter
+
+ 
+
+ 
+
+ 
+
+Kitchen-Chef()- Request("Pizza")
+
+ 
+
+Takes the request and Start Preparing /Task 
+
+ 
+
+Reponse("Pizza")-Waiter and Deliver To Table
+
+
+
+
+
