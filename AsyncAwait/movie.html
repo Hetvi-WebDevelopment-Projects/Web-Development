@@ -7,12 +7,13 @@
 </head>
 <body>
     <script>
-        async function getMOvie(moviename)
-        {
-            let url= 'http://www.omdbapi.com/?t='+moviename+'&apikey=b09331e5'
+        //Task - To Get The Movie Details- MovieName
 
-        }
-        try{
+         async  function getMovie(movieName){
+
+               let url = ` http://www.omdbapi.com/?t=${movieName}&apikey=b09331e5`
+
+               try{
                  //Logic
 
                     let response  =    await   fetch(url)
@@ -29,11 +30,11 @@
            }
            getMovie("interstellarkgfjfgkjgfjagfkjagfjka")
            
-        fuction add()
-        {
+
+           function add(){
             console.log(2+2);
-        }
-        add()
+           }
+           add()
     </script>
 </body>
 </html>
