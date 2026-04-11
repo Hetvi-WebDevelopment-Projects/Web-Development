@@ -1,0 +1,1 @@
+.ant-menu-item-selected{position:relative}.ant-menu-item-selected:before{content:"";position:absolute;left:0;top:50%;transform:translateY(-50%);height:16px;width:3px;background-color:var(--brandcolor);border-radius:1px}.custom_sidebar .ant-drawer .ant-drawer-body{padding:0!important}

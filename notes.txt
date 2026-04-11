@@ -1,42 +1,72 @@
 1. Async and await 
-
- 
-
 async - Before Function name(Task)
-
- 
-
 await - To Handle the waiting Period 
-
- 
-
- 
-
- 
-
 API-Waiter/Messenger.
-
- 
-
- 
-
 Order Place(customer=client) / Request ("Pizza/Data")- Waiter
-
- 
-
- 
-
- 
-
 Kitchen-Chef()- Request("Pizza")
-
- 
-
 Takes the request and Start Preparing /Task 
 
  
 
 Reponse("Pizza")-Waiter and Deliver To Table
+npm create vite@latest project-name
+useState- It is special React Varibale Also Know as useState - Hook , It remembers the value which is getting update/change and Update the screen Automatically
+useState- It is special React Varibale Also Know as useState - Hook , It remembers the value which is getting update/change and Update the screen Automatically
+Syntax
+const [count , setCount] = useState(Inital Value of Varibale)
+count --> Main Varibale -> Current Value
+setCount -> It Stores The Updated value
+http://localhost:5173/
+
+06-apr-2026
+http://localhost:5173/
+https://react-bootstrap.netlify.app/
+import 'bootstrap/dist/css/bootstrap.min.css'
+React + vite :  npm run dev
+
+07-apr-2026
+instructorfullstack@gmail.com
+http://localhost:5173/
+
+08-par-26
+<button   onClick  >Click Me</>
+React Events are added with on as prefix
+onClick
+onKeyDown
+onMouseOver
+onChange
+inputTag.value
+.value ->You can get The data which user is writing in Input Tag
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

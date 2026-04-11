@@ -4,10 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 99%;
+            background-image:url('https://images.pexels.com/photos/734789/pexels-photo-734789.jpeg');
+            background-size: cover;
+            width: 99%;
+            margin-top: 210px;
+        }
+    </style>
 </head>
 <body>
+    <div id="output"style="background-color: white; background-size: cover; font-size:18px; font-weight:bold; margin: 20px; 
+    border: 1px solid lightblue; padding: 20px; border-radius: 5px; height: 250px; width: 350px; display: flex; flex-direction: column; 
+    align-items: center; justify-content: center;">
+    <h2>Weather App</h2>
+    <input type="text" id="placeName" placeholder="Enter Place Name"><br />
+    <button onclick="getWeather(document.getElementById('placeName').value)">Get Weather</button>
+    </div>
+
     <script>
-        
+        //Task - To Get The Weather Details- PlaceName
+
+         async  function getWeather(placeName){
+
+               let url = ` http://api.openweathermap.org/data/2.5/weather?q=${placeName}&units=metric&apikey=90d8f47b711ed66c2b85e760068a68db`
+
+               try{
+                 //Logic
+
+                    let response  =    await   fetch(url)
+                    if (!response.ok) {
+                        throw new Error(`City not found or API issue (Status: ${response.status})`);
+                    }
+                    let data      =    await    response.json()
+                    console.log(data);
+                    console.log(`Temperature in ${placeName} is ${data.main.temp}°C`);
+                    document.getElementById("output").innerHTML = `<h3 style="color: blue; font-size: 18px; ">Temperature in ${placeName} is ${data.main.temp}°C</h3>`;
+
+               }
+               catch(error){
+                 console.log("Error Fetching Weather ", error)
+               }               
+
+           }
+           
+            function add(){
+            console.log(2+2);
+           }
+           add();
     </script>
 </body>
 </html>
